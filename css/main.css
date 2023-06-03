@@ -1,0 +1,30 @@
+.div1{
+    padding: 30px;
+    border: 1px solid;
+    border-color: rgba(93, 155, 155, 0.822);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 32%;
+    background-color: rgba(93, 155, 155, 0.822);
+}
+.div1:hover{
+    padding: 40px 50px;
+    border-radius: 13px;
+    left: 31%;
+}
+.label1{
+    padding: 8px;
+    border: 1px solid;
+    border-color: rgb(163, 247, 219);
+    border-radius: 6px;
+    margin: 10px;
+    background-color: rgb(163, 247, 219);
+    color: rgb(5, 100, 69);
+}
+.label1:hover{
+    background-color: rgb(241, 195, 160);
+    color: black;
+}
+

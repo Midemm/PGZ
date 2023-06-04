@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+.div2{
+    background-color: rgba(98, 158, 86, 0.788);
+    border: 1px solid;
+    border-radius: 5px;
+    width: 800px;
+    height: 200px;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.div3{
+    position: absolute;
+    left: 1000px;  
+    top: 62px;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+}
+b{
+    font-size: 30px;
+    
+}
+.karta{
+    margin: 70px;
+    margin-left: 450px;
+}

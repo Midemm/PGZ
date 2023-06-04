@@ -13,23 +13,22 @@ table{
 td{
     padding: 7px 10px;
 }
-body{
-    background-color: #a7ceee;
-    color: #ffffff;
-}
 .pric1{
     border: 1px solid;
     border-radius: 5px;
     height: 120px;
     width: 500px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
     background-color:rgb(189, 159, 137);
     position: relative;
-    left: 700px;
+    left: 680px;
 }
 .cen{
     text-align: center;
     font-size: 20px;
 
+}
+h1{
+    text-align: center;
 }

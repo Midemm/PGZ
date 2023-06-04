@@ -6,11 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Публичное акционерное общество "Территориальная генерирующая компания №14"</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/zadanie 2.css">
     <style>
- 
+        .pric1{
+            border: 1px solid;
+            border-radius: 5px;
+            height: 120px;
+            width: 500px;
+            text-align: center;
+            margin-top: 100px;
+            background-color:rgb(189, 159, 137);
+            position: relative;
+            left: 700px;
+        }
+        .cen{
+            text-align: center;
+            font-size: 20px;
+
+        }
     </style>
+    <script>
+        function znach(){
+            var prices=[0.00349, 0.00345, 0.00342, 0.00355, 0.00352, 0.00362, 0.00366, 0.00363, 0.00366, 0.00367, 0.00358, 0.00356, 0.00363, 0.00361, 0.0036, 0.00361, 0.0036, 0.00366, 0.0038, 0.00375, 0.00408];
+            var minPrice=Math.min(...prices);
+            var maxPrice=Math.max(...prices);
+            var averagePrice = prices.reduce((sum, price) => sum + price, 0) / prices.length;
+            var squaredDifferences = prices.map(price => (price - averagePrice) ** 2);
+            var meanSquaredDifference = squaredDifferences.reduce((sum, difference) => sum + difference, 0) / prices.length;
+            var standardDeviation = Math.sqrt(meanSquaredDifference);
+            document.getElementById("minPrice").textContent = minPrice + ' ₽';
+            document.getElementById("maxPrice").textContent = maxPrice + ' ₽';
+            document.getElementById("standardDeviation").textContent = standardDeviation + ' ₽';
+        }
+        
+    </script>
 </head>
-<body>
+<body onload="znach()">
+    <div class="pric1">
+        <h2>Рыночная капитализация:</h2>
+        <div class="cen">5 581 156 453,46 ₽</div>
+    </div>
+ 
+   
+    <div class="pric1">
+        <h2>Минимальная цена:</h2>
+        <div class="cen" id="minPrice"> </div>
+    </div>
+    <div class="pric1">
+        <h2>Максимальная цена:</h2>
+        <div class="cen" id="maxPrice"> </div>
+    </div>
+    <div class="pric1">
+        <h2>Среднеквадратическое отклонение цены:</h2>
+        <div class="cen" id="standardDeviation"> </div>
+    </div>
+    <table>
+        <tr>
+            <td>Дата</td>
+            <td>Цена на закрытии</td>
+        </tr>
+        <tr>
+            <td>1 марта</td>
+            <td>0.00349</td>
+        </tr>
+        <tr>
+            <td>2 марта</td>
+            <td>0.00345</td>
+        </tr>
+        <tr>
+            <td>3 марта</td>
+            <td>0.00342</td>
+        </tr>
+        <tr>
+            <td>6 марта</td>
+            <td>0.00355</td>
+        </tr>
+        <tr>
+            <td>7 марта</td>
+            <td>0.00352</td>
+        </tr>
+        <tr>
+            <td>9 марта</td>
+            <td>0.00362</td>
+        </tr>
+        <tr>
+            <td>10 марта</td>
+            <td>0.00366</td>
+        </tr>
+        <tr>
+            <td>13 марта</td>
+            <td>0.00363</td>
+        </tr>
+        <tr>
+            <td>14 марта</td>
+            <td>0.00366</td>
+        </tr>
+        <tr>
+            <td>15 марта</td>
+            <td>0.00367</td>
+        </tr>
+        <tr>
+            <td>16 марта</td>
+            <td>0.00358</td>
+        </tr>
+        <tr>
+            <td>17 марта</td>
+            <td>0.00356</td>
+        </tr>
+        <tr>
+            <td>20 марта</td>
+            <td>0.00363</td>
+        </tr>
+        <tr>
+            <td>21 марта</td>
+            <td>0.00361</td>
+        </tr>
+        <tr>
+            <td>22 марта</td>
+            <td>0.0036</td>
+        </tr>
+        <tr>
+            <td>23 марта</td>
+            <td>0.00361</td>
+        </tr>
+        <tr>
+            <td>24 марта</td>
+            <td>0.0036</td>
+        </tr>
+        <tr>
+            <td>27 марта</td>
+            <td>0.00366</td>
+        </tr>
+        <tr>
+            <td>28 марта</td>
+            <td>0.0038</td>
+        </tr>
+        <tr>
+            <td>29 марта</td>
+            <td>0.00375</td>
+        </tr>
+        <tr>
+            <td>30 марта</td>
+            <td>0.00415</td>
+        </tr>
+        <tr>
+            <td>31 марта</td>
+            <td>0.00408</td>
+        </tr>
+    </table>
     <div class="div1">
         <label class="label1"><a href="zadanie 1.html" target="_self" style="text-decoration: none; color: green;">О компании</a></label>
         <label class="label1"><a href="zadanie 2.html" target="_self" style="text-decoration: none; color: green;">Основные финансовые показатели</a></label>
